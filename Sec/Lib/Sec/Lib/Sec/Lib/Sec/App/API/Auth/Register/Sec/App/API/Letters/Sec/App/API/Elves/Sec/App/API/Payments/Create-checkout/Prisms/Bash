@@ -1,0 +1,21 @@
+# 1. Create new Next.js project
+npx create-next-app@latest elf-penpal --typescript --tailwind --app
+
+# 2. Install dependencies
+cd elf-penpal
+npm install @prisma/client @stripe/stripe-js @supabase/supabase-js
+npm install next-auth bcryptjs openai stripe nanoid
+npm install -D prisma @types/bcryptjs @types/node typescript
+
+# 3. Copy the code I provided above into respective files
+# (I've given you the complete file structure and all code)
+
+# 4. Set up .env file with your credentials
+
+# 5. Initialize database
+npx prisma generate
+npx prisma db push
+npx prisma db seed
+
+# 6. Run development server
+npm run dev
