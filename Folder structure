@@ -1,0 +1,105 @@
+elf-penpal-platform/
+├── README.md
+├── .env.example
+├── .gitignore
+├── package.json
+├── next.config.js
+├── tsconfig.json
+├── tailwind.config.js
+├── postcss.config.js
+│
+├── prisma/
+│   ├── schema.prisma
+│   └── seed.ts
+│
+├── public/
+│   ├── elves/
+│   ├── videos/
+│   └── certificates/
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   │
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   ├── [...nextauth]/route.ts
+│   │   │   │   ├── register/route.ts
+│   │   │   │   └── login/route.ts
+│   │   │   ├── elves/route.ts
+│   │   │   ├── letters/
+│   │   │   │   ├── route.ts
+│   │   │   │   └── [id]/route.ts
+│   │   │   ├── videos/route.ts
+│   │   │   ├── certificates/route.ts
+│   │   │   ├── payments/
+│   │   │   │   ├── create-checkout/route.ts
+│   │   │   │   └── webhook/route.ts
+│   │   │   └── ai/
+│   │   │       └── generate-response/route.ts
+│   │   │
+│   │   ├── (auth)/
+│   │   │   ├── login/page.tsx
+│   │   │   └── register/page.tsx
+│   │   │
+│   │   ├── kid/
+│   │   │   ├── dashboard/page.tsx
+│   │   │   ├── letters/page.tsx
+│   │   │   ├── videos/page.tsx
+│   │   │   ├── certificates/page.tsx
+│   │   │   ├── games/page.tsx
+│   │   │   └── countdown/page.tsx
+│   │   │
+│   │   └── parent/
+│   │       ├── dashboard/page.tsx
+│   │       ├── subscription/page.tsx
+│   │       ├── monitor/page.tsx
+│   │       ├── settings/page.tsx
+│   │       └── share/page.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   └── Tabs.tsx
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navigation.tsx
+│   │   ├── kid/
+│   │   │   ├── ElfSelector.tsx
+│   │   │   ├── LetterWriter.tsx
+│   │   │   ├── VideoPlayer.tsx
+│   │   │   ├── GamesList.tsx
+│   │   │   └── ChristmasCountdown.tsx
+│   │   ├── parent/
+│   │   │   ├── PricingCards.tsx
+│   │   │   ├── MessageMonitor.tsx
+│   │   │   ├── ResponseToggle.tsx
+│   │   │   └── ShareButtons.tsx
+│   │   └── SnowEffect.tsx
+│   │
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   ├── stripe.ts
+│   │   ├── openai.ts
+│   │   ├── supabase.ts
+│   │   └── utils.ts
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── useLetters.ts
+│   │   ├── useElves.ts
+│   │   └── useSubscription.ts
+│   │
+│   └── types/
+│       └── index.ts
+│
+└── tests/
+    ├── unit/
+    └── integration/
